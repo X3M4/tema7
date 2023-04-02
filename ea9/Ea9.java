@@ -11,8 +11,6 @@ public class Ea9 {
 		ruta = sc.nextLine();// /media/chema/32184EF6184EB89D
 		String regexp = "[a-zA-z]+\\.[a-z]+";
 		
-		
-		
 		try {
 			File f = new File(ruta);
 			
@@ -21,11 +19,7 @@ public class Ea9 {
 				ruta = ".";
 				f = new File(ruta);
 			}
-			
 			File[] fl = f.listFiles(new Filtro(ruta));
-			
-			
-			
 			for(File archivo: fl) {
 				if(archivo.getName().matches(regexp)) {
 					System.out.println(archivo.getName());
@@ -34,8 +28,6 @@ public class Ea9 {
 		}catch(Exception e) {
 			System.out.println("Error al buscar en la ruta");
 		}
-		
-		
 	}
 }
 
