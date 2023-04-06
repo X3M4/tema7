@@ -10,5 +10,4 @@ public class Ea17 {
 		System.out.println(Paths.get("").toAbsolutePath());
 		System.out.println(System.getProperty("user.dir"));
 	}
-
 }
